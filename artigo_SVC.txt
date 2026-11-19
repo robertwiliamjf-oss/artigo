@@ -1,0 +1,70 @@
+JOURNAL OF LATEX CLASS FILES, VOL. 18, NO. 9, SEPTEMBER 2020                                                                         1
+
+
+
+
+                      Optimal Tuning of Static Var Compensators for
+  Power Quality Enhancement in Distribution Systems: An Approach
+          using the Three-Phase Harmonic Current Injection Method
+                                 Robert W. da Silva, Igor D. de Melo, Leticia L. S. de Sousa
+
+
+
+
+   Abstract—This work proposes a nonlinear optimization                Within this scenario, power-electronics-based equipment has
+methodology for controlling Static Var Compensators (SVCs)          become increasingly relevant in distribution systems because it
+in distribution systems. The objective function combines the        enables fast and flexible actions for voltage regulation, reactive
+minimization of voltage deviation, negative-sequence voltage and
+phase unbalance indices. The formulation is based on the Har-       power compensation, power-flow support, and overall power-
+monic Three-Phase Current Injection Method (HTPCIM), repre-         quality improvement [5]. This is particularly important be-
+senting each compensator through topology-dependent harmonic        cause voltage drops at the end of feeders and phase unbalance
+current injection equations and associated control variables. The   remain persistent operational challenges, while conventional
+numerical implementation enables independent adjustment of the      utility assets often provide limited dynamic controllability.
+firing angle of each three-phase branch, allowing branch-specific
+reactive power compensation according to network operating          Consequently, distribution utilities must deal with networks
+conditions. In addition to voltage magnitudes and total har-        whose monitoring and control capabilities may be insufficient
+monic distortion (THD) constraints, the formulation incorporates    for the real-time mitigation of local disturbances and phase-
+a voltage unbalance factor (VUF) constraint, evaluated using        dependent voltage deviations, especially in low-observability
+the positive- and negative-sequence voltage components. The         feeders [6]. Among the available solutions, Static Var Compen-
+proposed methodology is evaluated using IEEE benchmark test
+feeders under balanced and unbalanced loading conditions. Nu-       sators (SVCs), based on thyristor-controlled reactive power de-
+merical results demonstrate that optimized SVC control increases    vices, represent an attractive alternative for providing dynamic
+the loading capability of controlled buses and improves voltage     reactive power compensation and voltage regulation [5], [7].
+profiles. Furthermore, under suitable operating conditions, the     Their controllable operating characteristics also make them
+proposed strategy reduces phase unbalance while maintaining         suitable for optimization-based control strategies aimed at
+voltage and THD limits. The results highlight the potential of
+the proposed optimization framework as a flexible solution for      improving the operating conditions of distribution networks.
+coordinating SVC operation in distribution networks subject            However, voltage regulation alone may be insufficient when
+to varying loading conditions. By simultaneously addressing         the problem is considered from a broader power-quality per-
+voltage regulation, harmonic distortion, and phase unbalance, the   spective. Thyristor-based compensators are nonlinear devices
+methodology provides a comprehensive approach to improving          that may introduce harmonic components into the network.
+power quality and enhancing the operational performance of
+distribution systems.                                               Characteristic low-order harmonics, such as the 5th, 7th, 11th,
+                                                                    and 13th, are commonly associated with these devices, depend-
+  Index Terms—Power Quality, Harmonic analysis, Static Var          ing on their circuit configuration and filtering conditions [8],
+Compensators, Optimization, Distribution Systems.
+                                                                    [9]. Furthermore, the interaction between compensator com-
+                                                                    ponents and network impedances may create resonance condi-
+                       I. I NTRODUCTION                             tions capable of amplifying voltage distortion, increasing total
+                                                                    harmonic distortion (THD), and contributing to overvoltage
+
+D     ISTRIBUTION systems operate under increasingly com-
+      plex technical conditions due to the combined effects of
+load variability, phase unbalance, nonlinear consumer devices,
+                                                                    phenomena [10]. Phase unbalance represents an additional
+                                                                    concern because it may increase neutral currents, intensify
+                                                                    losses and thermal stresses in conductors and equipment, and
+and limited voltage support along radial feeders. In practical      deteriorate the operating conditions of sensitive loads and
+networks, these characteristics may lead to unequal phase           rotating machines [7]. These aspects indicate that reactive
+loading, harmonic distortion, voltage drops at remote buses,        power compensation should be addressed through control
+and reduced operating margins, particularly in long feeders and     strategies that simultaneously consider voltage regulation, har-
+under loading conditions above nominal levels [1]. From the         monic distortion, and phase unbalance.
+operational viewpoint, these challenges are further intensified        In this context, this paper proposes a nonlinear optimization
+by the ongoing transformation of distribution grids, particu-       methodology for SVC control based on the Harmonic Three-
+larly the increasing penetration of distributed generation and      Phase Current Injection Method (HTPCIM) [11]. MICTH
+the rapid growth of electric-vehicle charging demand [2], [3].      extends the Three-Phase Current Injection Method (HTPCIM),
+In parallel, artificial-intelligence techniques are increasingly    originally developed for fundamental-frequency unbalanced
+being investigated for the detection, classification, prediction,   power-flow calculations [12], to the harmonic domain [11].
+and mitigation of power-quality disturbances in distribution        By adopting a current-injection representation, the proposed
+systems [4].                                                        formulation provides flexibility in modeling SVCs with dif-
+

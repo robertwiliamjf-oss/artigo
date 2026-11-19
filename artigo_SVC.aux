@@ -1,0 +1,187 @@
+\relax 
+\citation{loji2023operational}
+\citation{nasir2024hosting,ghaffari2025planning}
+\citation{dehaghani2025ai}
+\citation{Stanelyte2020VoltVar}
+\citation{Yadav2023DSSE}
+\citation{Stanelyte2020VoltVar,Liu2020SVCUnbalance}
+\citation{Kraimia2021SVCHarmonics,Zheng2021SVCHarmonicFailure}
+\citation{Farzin2022CapacitorResonance}
+\citation{Liu2020SVCUnbalance}
+\citation{variz2006three}
+\citation{garcia2000three}
+\citation{variz2006three}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}The Proposed Methodology}{2}{}\protected@file@percent }
+\newlabel{sec:methodology}{{II}{2}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Static Var Compensator Model}{2}{}\protected@file@percent }
+\newlabel{subsec:svc_rating}{{\mbox  {II-A}}{2}{}{subsection.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces SVC with each delta branch $\ell \in \{ab,bc,ca\}$ composed of capacitor bank $C_{j,\ell }$ in parallel with TCR controlled by the firing angle $\alpha _{j,\ell }$.}}{2}{}\protected@file@percent }
+\newlabel{fig:delta_fc_tcr_svc}{{1}{2}{}{figure.1}{}}
+\newlabel{eq:svc_susceptance}{{1}{2}{}{equation.1}{}}
+\newlabel{eq:svc_rating}{{2}{2}{}{equation.2}{}}
+\newlabel{eq:svc_branch_current}{{3}{2}{}{equation.3}{}}
+\newlabel{eq:tcr_fourier}{{4}{3}{}{equation.4}{}}
+\newlabel{eq:delta_incidence}{{5}{3}{}{equation.5}{}}
+\newlabel{eq:unbalanced_branch_phasors}{{6}{3}{}{equation.6}{}}
+\newlabel{eq:branch_voltage_waveform}{{7}{3}{}{equation.7}{}}
+\newlabel{eq:firing_instants}{{8}{3}{}{equation.8}{}}
+\newlabel{eq:extinction_instants}{{9}{3}{}{equation.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces TCR conduction intervals as a function of the thyristor firing angle.}}{3}{}\protected@file@percent }
+\newlabel{figrtc}{{2}{3}{}{figure.2}{}}
+\newlabel{eq:tcr_differential}{{10}{4}{}{equation.10}{}}
+\newlabel{eq:tcr_analytical_current}{{11}{4}{}{equation.11}{}}
+\newlabel{eq:tcr_initial_constant}{{12}{4}{}{equation.12}{}}
+\newlabel{eq:tcr_fourier_coefficients}{{13}{4}{}{equation.13}{}}
+\newlabel{eq:tcr_forced_coefficients}{{14}{4}{}{equation.14}{}}
+\newlabel{eq:tcr_endpoint_kernels}{{15}{4}{}{equation.15}{}}
+\newlabel{eq:tcr_exponential_kernels}{{16}{4}{}{equation.16}{}}
+\newlabel{eq:tcr_fourier_closed_form}{{17}{5}{}{equation.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}The Proposed Optimization Model}{5}{}\protected@file@percent }
+\newlabel{eq:decision_vector}{{18}{5}{}{equation.18}{}}
+\newlabel{eq:optimization_problem}{{19}{5}{}{equation.19}{}}
+\newlabel{subsec:reduced_space}{{\mbox  {II-B}1}{5}{}{subsubsection.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}1}Reduced-Space Formulation}{5}{}\protected@file@percent }
+\citation{DommelTinney1968,Pacaud2022ReducedSpace}
+\newlabel{eq:htpcim_state_equations}{{20}{6}{}{equation.20}{}}
+\newlabel{eq:implicit_state_map}{{21}{6}{}{equation.21}{}}
+\newlabel{eq:reduced_optimization_problem}{{22}{6}{}{equation.22}{}}
+\newlabel{eq:reduced_state_sensitivity}{{23}{6}{}{equation.23}{}}
+\newlabel{eq:reduced_objective_gradient}{{24}{6}{}{equation.24}{}}
+\newlabel{eq:reduced_constraint_gradient}{{25}{6}{}{equation.25}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}2}Load Modeling and Current Injections}{6}{}\protected@file@percent }
+\newlabel{eq:zip_model}{{26}{6}{}{equation.26}{}}
+\newlabel{eq:load_current_rectangular}{{27}{6}{}{equation.27}{}}
+\newlabel{eq:aggregate_fundamental_current}{{28}{7}{}{equation.28}{}}
+\newlabel{eq:fundamental_mismatch}{{29}{7}{}{equation.29}{}}
+\newlabel{eq:harmonic_mismatch}{{31}{7}{}{equation.31}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}3}Power quality indices as constraints}{7}{}\protected@file@percent }
+\newlabel{eq:vuf}{{32}{7}{}{equation.32}{}}
+\newlabel{eq:thd}{{33}{7}{}{equation.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {II-B}4}Objective Function}{7}{}\protected@file@percent }
+\newlabel{eq:objective}{{34}{7}{}{equation.34}{}}
+\citation{EN50160}
+\citation{IEC61000_2_2}
+\citation{Gill2005SNOPT}
+\citation{Gill2005SNOPT}
+\citation{variz2006three}
+\newlabel{eq:voltage_deviation_index}{{35}{8}{}{equation.35}{}}
+\newlabel{eq:negative_sequence_index}{{36}{8}{}{equation.36}{}}
+\newlabel{eq:obj_imb}{{37}{8}{}{equation.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Numerical Settings and Adopted Limits}{8}{}\protected@file@percent }
+\newlabel{subsec:numerical_settings}{{\mbox  {II-C}}{8}{}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-D}}SQP to Solve the Optimization Problem}{8}{}\protected@file@percent }
+\newlabel{sec:sqp}{{\mbox  {II-D}}{8}{}{subsection.2.4}{}}
+\newlabel{eq:sqp_subproblem}{{38}{8}{}{equation.38}{}}
+\newlabel{eq:sqp_update}{{39}{8}{}{equation.39}{}}
+\citation{dolatabadi2021}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Computational simulations and Results}{9}{}\protected@file@percent }
+\newlabel{sec:results}{{III}{9}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}System Description and Test Network}{9}{}\protected@file@percent }
+\newlabel{subsec:system}{{\mbox  {III-A}}{9}{}{subsection.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Single-line diagram of the adopted IEEE 33-bus system.}}{9}{}\protected@file@percent }
+\newlabel{fig:ieee33_singleline}{{3}{9}{}{figure.3}{}}
+\newlabel{eq:phase_load_scaling}{{41}{9}{}{equation.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Parameters of the static VAr compensators}}{9}{}\protected@file@percent }
+\newlabel{tab:svc_parameters}{{I}{9}{}{table.1}{}}
+\newlabel{eq:phase_load_curve}{{42}{9}{}{equation.42}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}Balanced Loading Condition}{9}{}\protected@file@percent }
+\newlabel{subsec:balanced_results}{{\mbox  {III-B}}{9}{}{subsection.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Fundamental-voltage magnitude as a function of the load multiplier for all buses.}}{10}{}\protected@file@percent }
+\newlabel{fig:balanced_voltage_all_buses}{{4}{10}{}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Fundamental-voltage profiles for different load multipliers.}}{10}{}\protected@file@percent }
+\newlabel{fig:balanced_voltage_profiles}{{5}{10}{}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Voltage magnitude at the controlled SVC bus 17.}}{10}{}\protected@file@percent }
+\newlabel{fig:balanced_voltage_bus17}{{6}{10}{}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Voltage THD as a function of the load multiplier for all buses.}}{10}{}\protected@file@percent }
+\newlabel{fig:balanced_thdv_all_buses}{{7}{10}{}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Voltage THD at bus 17 as a function of the load multiplier (balanced case).}}{10}{}\protected@file@percent }
+\newlabel{fig:balanced_thdv_bus17}{{8}{10}{}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Three-Phase Unbalanced Loading Condition}{10}{}\protected@file@percent }
+\newlabel{subsec:unbalanced_results}{{\mbox  {III-C}}{10}{}{subsection.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Firing angles of the controlled SVCs as a function of the load multiplier (balanced case).}}{11}{}\protected@file@percent }
+\newlabel{fig:balanced_firing_angles}{{9}{11}{}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Daily phase load multipliers used in the unbalanced case.}}{11}{}\protected@file@percent }
+\newlabel{fig:unbalanced_loading_profiles}{{10}{11}{}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces VUF at bus 17 without SVC and with optimized SVC operation.}}{11}{}\protected@file@percent }
+\newlabel{fig:unbalanced_vuf_bus17}{{11}{11}{}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Phase-voltage magnitudes at bus 17 in the unbalanced case without SVC and with optimized SVC operation.}}{11}{}\protected@file@percent }
+\newlabel{fig:unbalanced_phase_voltage_bus17}{{12}{11}{}{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Firing angles of the SVC at bus 17 in the unbalanced case.}}{11}{}\protected@file@percent }
+\newlabel{fig:unbalanced_firing_angles_bus17}{{13}{11}{}{figure.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Phase-voltage deviations at bus 17 in the unbalanced case without SVC and with optimized SVC operation.}}{11}{}\protected@file@percent }
+\newlabel{fig:unbalanced_phase_voltage_deviation_bus17}{{14}{11}{}{figure.14}{}}
+\citation{Kersting2001RadialFeeders}
+\citation{EPRIOpenDSSTestCases}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Voltage envelope at bus 17 in the unbalanced case.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_voltage_envelope_bus17}{{15}{12}{}{figure.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Voltage-THD envelope at bus 17 in the unbalanced case.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_thdv_envelope_bus17}{{16}{12}{}{figure.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Phase voltage THD at bus 17 in the optimized unbalanced case.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_thdv_phase_bus17}{{17}{12}{}{figure.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Voltage unbalance factor at bus 32 in the unbalanced case without SVC and with optimized SVC operation.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_vuf_bus32}{{18}{12}{}{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Firing angles of the controlled SVC at bus 32 in the unbalanced case.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_firing_angles_bus32}{{19}{12}{}{figure.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Voltage envelope at bus 32 in the unbalanced case.}}{12}{}\protected@file@percent }
+\newlabel{fig:unbalanced_voltage_envelope_bus32}{{20}{12}{}{figure.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-D}}Balanced-Loading Tests on the IEEE 123-Node Test Feeder}{12}{}\protected@file@percent }
+\newlabel{subsec:ieee123_results}{{\mbox  {III-D}}{12}{}{subsection.3.4}{}}
+\citation{JainDahiya2016SVCPlacement}
+\citation{AuMilanovic2007HarmonicPlacement}
+\citation{Qi2017DynamicVarPlacement}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}1}SVC location screening}{13}{}\protected@file@percent }
+\newlabel{eq:svc_location_individual_score}{{43}{13}{}{equation.43}{}}
+\newlabel{eq:svc_location_complementarity}{{44}{13}{}{equation.44}{}}
+\newlabel{eq:svc_location_pair_score}{{45}{13}{}{equation.45}{}}
+\newlabel{eq:ieee123_control_vector}{{46}{14}{}{equation.46}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Equivalent FC--TCR parameters for each connection in the IEEE 123-node feeder}}{14}{}\protected@file@percent }
+\newlabel{tab:svc_parameters123_current}{{II}{14}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}2}Balanced loading trajectory and optimization settings}{14}{}\protected@file@percent }
+\newlabel{eq:ieee123_balanced_objective}{{47}{14}{}{equation.47}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {III-D}3}Results of the 24-point sweep}{14}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Fundamental-frequency phase voltages at buses 83 and 95 for grounded-wye and delta SVC connections. Solid curves denote grounded wye, and dashed curves denote delta. All points shown are converged electrical solutions; points outside the 0.95--1.05-pu band are classified only as infeasible with respect to the optimization constraints.}}{15}{}\protected@file@percent }
+\newlabel{fig:ieee123_phase_voltages_connections}{{21}{15}{}{figure.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Comparison over the balanced 24-point IEEE 123-node loading sweep}}{15}{}\protected@file@percent }
+\newlabel{tab:ieee123_24h_summary}{{III}{15}{}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Connection comparison over the balanced loading sweep: maximum feeder THD (left) and VUF at buses 83 and 95 (right). Solid curves denote grounded wye, and dashed curves denote delta.}}{16}{}\protected@file@percent }
+\newlabel{fig:ieee123_quality_connections}{{22}{16}{}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces FC--TCR firing angles at buses 83 (left) and 95 (right). Solid curves represent grounded-wye phase elements; dashed curves represent delta branches $ab$, $bc$, and $ca$.}}{16}{}\protected@file@percent }
+\newlabel{fig:ieee123_angles_connections}{{23}{16}{}{figure.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-E}}Computational time}{16}{}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{loji2023operational}{1}
+\bibcite{nasir2024hosting}{2}
+\bibcite{ghaffari2025planning}{3}
+\bibcite{dehaghani2025ai}{4}
+\bibcite{Stanelyte2020VoltVar}{5}
+\bibcite{Yadav2023DSSE}{6}
+\bibcite{Liu2020SVCUnbalance}{7}
+\bibcite{Kraimia2021SVCHarmonics}{8}
+\bibcite{Zheng2021SVCHarmonicFailure}{9}
+\bibcite{Farzin2022CapacitorResonance}{10}
+\bibcite{variz2006three}{11}
+\bibcite{garcia2000three}{12}
+\bibcite{DommelTinney1968}{13}
+\bibcite{Pacaud2022ReducedSpace}{14}
+\bibcite{EN50160}{15}
+\bibcite{IEC61000_2_2}{16}
+\bibcite{Gill2005SNOPT}{17}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Mean computational performance of the SQP approach over 24 operating points}}{17}{}\protected@file@percent }
+\newlabel{tab:sqp_performance}{{IV}{17}{}{table.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Conclusions}{17}{}\protected@file@percent }
+\newlabel{sec:conclusions}{{IV}{17}{}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{References}{17}{}\protected@file@percent }
+\bibcite{dolatabadi2021}{18}
+\bibcite{Kersting2001RadialFeeders}{19}
+\bibcite{EPRIOpenDSSTestCases}{20}
+\bibcite{JainDahiya2016SVCPlacement}{21}
+\bibcite{AuMilanovic2007HarmonicPlacement}{22}
+\bibcite{Qi2017DynamicVarPlacement}{23}
+\citation{dolatabadi2021}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: System Data Used in the Simulations}{18}{}\protected@file@percent }
+\newlabel{app:system_data}{{A}{18}{}{section.Appendix.A}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Nominal phase-load coefficients used in the ZIP load block}}{18}{}\protected@file@percent }
+\newlabel{tab:appendix_load_data}{{V}{18}{}{table.5}{}}
+\gdef \@abspage@last{18}

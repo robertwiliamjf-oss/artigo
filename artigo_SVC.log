@@ -1,0 +1,1429 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.30)  19 NOV 2026 00:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**artigo_SVC.tex
+(./artigo_SVC.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen148
+\@IEEEtrantmpdimenB=\dimen149
+\@IEEEtrantmpdimenC=\dimen150
+\@IEEEtrantmpcountA=\count275
+\@IEEEtrantmpcountB=\count276
+\@IEEEtrantmpcountC=\count277
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen151
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
+n input line 940.
+\CLASSINFOnormalsizebaselineskip=\dimen152
+\CLASSINFOnormalsizeunitybaselineskip=\dimen153
+\IEEEnormaljot=\dimen154
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <18> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+
+\IEEEquantizedlength=\dimen155
+\IEEEquantizedlengthdiff=\dimen156
+\IEEEquantizedtextheightdiff=\dimen157
+\IEEEilabelindentA=\dimen158
+\IEEEilabelindentB=\dimen159
+\IEEEilabelindent=\dimen160
+\IEEEelabelindent=\dimen161
+\IEEEdlabelindent=\dimen162
+\IEEElabelindent=\dimen163
+\IEEEiednormlabelsep=\dimen164
+\IEEEiedmathlabelsep=\dimen165
+\IEEEiedtopsep=\skip49
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@IEEEsubequation=\count282
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count283
+\c@table=\count284
+\@IEEEeqnnumcols=\count285
+\@IEEEeqncolcnt=\count286
+\@IEEEsubeqnnumrollback=\count287
+\@IEEEquantizeheightA=\dimen166
+\@IEEEquantizeheightB=\dimen167
+\@IEEEquantizeheightC=\dimen168
+\@IEEEquantizeprevdepth=\dimen169
+\@IEEEquantizemultiple=\count288
+\@IEEEquantizeboxA=\box53
+\@IEEEtmpitemindent=\dimen170
+\IEEEPARstartletwidth=\dimen171
+\c@IEEEbiography=\count289
+\@IEEEtranrubishbin=\box54
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip52
+For additional information on amsmath, use the `?' option.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen172
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen173
+) (d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.st
+y
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen174
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks19
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks20
+\eqnshift@=\dimen175
+\alignsep@=\dimen176
+\tagshift@=\dimen177
+\tagwidth@=\dimen178
+\totwidth@=\dimen179
+\lineht@=\dimen180
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.s
+ty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/algorithmicx/algpse
+udocode.sty
+Package: algpseudocode 
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/algorithmicx/algori
+thmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count302
+\c@ALG@rem=\count303
+\c@ALG@nested=\count304
+\ALG@tlm=\skip55
+\ALG@thistlm=\skip56
+\c@ALG@Lnr=\count305
+\c@ALG@blocknr=\count306
+\c@ALG@storecount=\count307
+\c@ALG@tmpcounter=\count308
+\ALG@tmplength=\skip57
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/algorithms/algorith
+m.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count309
+\float@exts=\toks23
+\float@box=\box57
+\@float@everytoks=\toks24
+\@floatcapt=\box58
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count310
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen181
+\ar@mcellbox=\box59
+\extrarowheight=\dimen182
+\NC@list=\toks26
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box60
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.s
+ty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen183
+\lightrulewidth=\dimen184
+\cmidrulewidth=\dimen185
+\belowrulesep=\dimen186
+\belowbottomsep=\dimen187
+\aboverulesep=\dimen188
+\abovetopsep=\dimen189
+\cmidrulesep=\dimen190
+\cmidrulekern=\dimen191
+\defaultaddspace=\dimen192
+\@cmidla=\count311
+\@cmidlb=\count312
+\@aboverulesep=\dimen193
+\@belowrulesep=\dimen194
+\@thisruleclass=\count313
+\@lastruleclass=\count314
+\@thisrulewidth=\dimen195
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/caption/caption3.st
+y
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen196
+\captionmargin=\dimen197
+\caption@leftmargin=\dimen198
+\caption@rightmargin=\dimen199
+\caption@width=\dimen256
+\caption@indent=\dimen257
+\caption@parindent=\dimen258
+\caption@hangindent=\dimen259
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+\c@KVtest=\count315
+\sf@farskip=\skip60
+\sf@captopadj=\dimen260
+\sf@capskip=\skip61
+\sf@nearskip=\skip62
+\c@subfigure=\count316
+\c@subfigure@save=\count317
+\c@lofdepth=\count318
+\c@subtable=\count319
+\c@subtable@save=\count320
+\c@lotdepth=\count321
+\sf@top=\skip63
+\sf@bottom=\skip64
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/multirow/multirow.s
+ty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count322
+\multirow@dima=\skip66
+\bigstrutjot=\dimen261
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count323
+\l__siunitx_number_exponent_fixed_int=\count324
+\l__siunitx_number_min_decimal_int=\count325
+\l__siunitx_number_min_integer_int=\count326
+\l__siunitx_number_round_precision_int=\count327
+\l__siunitx_number_lower_threshold_int=\count328
+\l__siunitx_number_upper_threshold_int=\count329
+\l__siunitx_number_group_first_int=\count330
+\l__siunitx_number_group_size_int=\count331
+\l__siunitx_number_group_minimum_int=\count332
+\l__siunitx_angle_tmp_dim=\dimen262
+\l__siunitx_angle_marker_box=\box61
+\l__siunitx_angle_unit_box=\box62
+\l__siunitx_compound_count_int=\count333
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/translations/transl
+ations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.s
+ty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count334
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftex
+cmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/infwarerr/infware
+rr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.s
+ty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box63
+\l__siunitx_table_tmp_dim=\dimen263
+\l__siunitx_table_column_width_dim=\dimen264
+\l__siunitx_table_integer_box=\box64
+\l__siunitx_table_decimal_box=\box65
+\l__siunitx_table_uncert_box=\box66
+\l__siunitx_table_before_box=\box67
+\l__siunitx_table_after_box=\box68
+\l__siunitx_table_before_dim=\dimen265
+\l__siunitx_table_carry_dim=\dimen266
+\l__siunitx_unit_tmp_int=\count335
+\l__siunitx_unit_position_int=\count336
+\l__siunitx_unit_total_int=\count337
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/sttools/stfloats.st
+y
+Package: stfloats 2025/06/18 v3.4 Improve float mechanism and baselineskip sett
+ings
+\@dblbotnum=\count338
+\c@dblbotnumber=\count339
+) (d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/threeparttable/thre
+eparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box69
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read2
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.s
+ty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics/graphics.s
+ty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphi
+cs.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex
+.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen267
+\Gin@req@width=\dimen268
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/t
+ikz.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.
+sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrc
+s.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+util-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen269
+\pgfutil@tempdimb=\dimen270
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+util-latex.def
+\pgfutil@abb=\box70
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+rcs.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.
+tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgfc
+ore.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/systemlayer/pgf
+sys.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+keys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+keyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen271
+\pgf@y=\dimen272
+\pgf@xa=\dimen273
+\pgf@ya=\dimen274
+\pgf@xb=\dimen275
+\pgf@yb=\dimen276
+\pgf@xc=\dimen277
+\pgf@yc=\dimen278
+\pgf@xd=\dimen279
+\pgf@yd=\dimen280
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count340
+\c@pgf@countb=\count341
+\c@pgf@countc=\count342
+\c@pgf@countd=\count343
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count344
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count345
+\pgfsyssoftpath@bigbuffer@items=\count346
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/p
+gfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.
+cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.
+ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.
+code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathu
+til.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathp
+arser.code.tex
+\pgfmath@dimen=\dimen281
+\pgfmath@count=\count347
+\pgfmath@box=\box71
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.basic.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.trigonometric.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.random.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.comparison.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.base.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.round.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.misc.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+unctions.integerarithmetics.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathc
+alc.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathf
+loat.code.tex
+\c@pgfmathroundto@lastzeros=\count348
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.c
+ode.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen282
+\pgf@picmaxx=\dimen283
+\pgf@picminy=\dimen284
+\pgf@picmaxy=\dimen285
+\pgf@pathminx=\dimen286
+\pgf@pathmaxx=\dimen287
+\pgf@pathminy=\dimen288
+\pgf@pathmaxy=\dimen289
+\pgf@xx=\dimen290
+\pgf@xy=\dimen291
+\pgf@yx=\dimen292
+\pgf@yy=\dimen293
+\pgf@zx=\dimen294
+\pgf@zy=\dimen295
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen296
+\pgf@path@lasty=\dimen297
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen298
+\pgf@shorten@start@additional=\dimen299
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box72
+\pgf@hbox=\box73
+\pgf@layerbox@main=\box74
+\pgf@picture@serial@count=\count349
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen300
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen301
+\pgf@pt@y=\dimen302
+\pgf@pt@temp=\dimen303
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen304
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen305
+\pgf@sys@shading@range@num=\count350
+\pgf@shadingcount=\count351
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box75
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pg
+fcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+duleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box76
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+duleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/p
+gfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen306
+\pgf@nodesepend=\dimen307
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/p
+gfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgffo
+r.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfke
+ys.sty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+keys.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgf/math/pgfmath.st
+y
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.
+code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgf
+for.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen308
+\pgffor@skip=\dimen309
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
+libraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count352
+\pgfplotmarksize=\dimen310
+)
+\tikz@lastx=\dimen311
+\tikz@lasty=\dimen312
+\tikz@lastxsaved=\dimen313
+\tikz@lastysaved=\dimen314
+\tikz@lastmovetox=\dimen315
+\tikz@lastmovetoy=\dimen316
+\tikzleveldistance=\dimen317
+\tikzsiblingdistance=\dimen318
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count353
+\tikznumberofchildren=\count354
+\tikznumberofcurrentchild=\count355
+\tikz@fig@count=\count356
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+dulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count357
+\pgfmatrixcurrentcolumn=\count358
+\pgf@matrix@numberofcolumns=\count359
+)
+\tikz@expandcount=\count360
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/pgfplots/pgfplots.s
+ty
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.revision.tex)
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+core.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen319
+\c@pgfplots@coordindex=\count361
+\c@pgfplots@scanlineindex=\count362
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgfp
+lotssysgeneric.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgf
+plotslibrary.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfco
+mpatib/pgfplotsoldpgfsupp_loader.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
+libraryfpu.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/oldpgfco
+mpatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotsutil.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/liststru
+cture/pgfplotsliststructure.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/liststru
+cture/pgfplotsliststructureext.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/liststru
+cture/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count363
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/liststru
+cture/pgfplotsmatrix.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/numtable
+/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count364
+\t@pgfplotstable@a=\toks45
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/liststru
+cture/pgfplotsdeque.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotsbinary.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotsbinary.data.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotsutil.verb.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/pgf
+librarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count365
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/sys/pgfl
+ibrarypgfplots.surfshading.pgfsys-pdftex.def)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotscolormap.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/util/pgf
+plotscolor.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+stackedplots.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+plothandlers.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+meshplothandler.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+meshplotimage.code.tex)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.scaling.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+coordprocessing.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.errorbars.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.markers.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+ticks.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/pgfplots
+.paths.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarydecorations.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+duledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen320
+\pgfdecoratedremainingdistance=\dimen321
+\pgfdecoratedinputsegmentcompleteddistance=\dimen322
+\pgfdecoratedinputsegmentremainingdistance=\dimen323
+\pgf@decorate@distancetomove=\dimen324
+\pgf@decorate@repeatstate=\count366
+\pgfdecorationsegmentamplitude=\dimen325
+\pgfdecorationsegmentlength=\dimen326
+)
+\tikz@lib@dec@box=\box81
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/dec
+orations/pgflibrarydecorations.pathmorphing.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/dec
+orations/pgflibrarydecorations.pathreplacing.code.tex))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgfplots/libs/tik
+zlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count367
+\pgfplots@xmin@reg=\dimen327
+\pgfplots@xmax@reg=\dimen328
+\pgfplots@ymin@reg=\dimen329
+\pgfplots@ymax@reg=\dimen330
+\pgfplots@zmin@reg=\dimen331
+\pgfplots@zmax@reg=\dimen332
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
+libraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/circuitikz/circuiti
+kz.sty
+Package: circuitikz 2026/02/04{} The CircuiTikz circuit drawing package version
+ 1.8.5
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
+libraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen333
+\pgfarrowlength=\dimen334
+\pgfarrowwidth=\dimen335
+\pgfarrowlinewidth=\dimen336
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+dulebending.code.tex
+File: pgfmodulebending.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmo
+dulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgftransformnonlinearflatness=\dimen337
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgf
+librarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@curvilinear@time@a=\dimen338
+\pgf@curvilinear@length@a=\dimen339
+\pgf@curvilinear@length@b=\dimen340
+\pgf@curvilinear@length@c=\dimen341
+\pgf@curvilinear@length@d=\dimen342
+)
+\pgf@arrows@the@rigidity=\dimen343
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer
+/tikz/libraries/tikzlibraryfpu.code.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+c.defines.tex
+\pgf@circ@count@a=\count368
+\pgf@circ@count@b=\count369
+\pgf@circ@count@c=\count370
+\pgf@circ@res@up=\dimen344
+\pgf@circ@res@down=\dimen345
+\pgf@circ@res@zero=\dimen346
+\pgf@circ@res@left=\dimen347
+\pgf@circ@res@right=\dimen348
+\pgf@circ@res@other=\dimen349
+\pgf@circ@res@step=\dimen350
+\pgf@circ@res@temp=\dimen351
+\pgf@circ@Rlen=\dimen352
+\pgf@circ@scaled@Rlen=\dimen353
+\pgfstartlinewidth=\dimen354
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cutils.tex
+\ctikz@scratchbox=\box82
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cpath.tex
+\ctikz@vif@count=\count371
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cshapes.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cmonopoles.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cbipoles.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+ctripoles.tex
+\pgf@circ@res@count=\count372
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cquadpoles.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cmultipoles.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+clabel.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cvoltage.tex
+\pgfcirc@labelshift=\dimen355
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+ccurrent.tex)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/circuitikz/pgfcir
+cflow.tex))
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 79.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend
+-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count373
+) (./artigo_SVC.aux)
+\openout1 = `artigo_SVC.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+
+-- Lines per column: 58 (exact).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/translations/transl
+ations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 79.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pd
+f.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count374
+\scratchdimen=\dimen356
+\scratchbox=\box83
+\nofMPsegments=\count375
+\nofMParguments=\count376
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count377
+\MPscratchDim=\dimen357
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
+\everyMPtoPDFconversion=\toks47
+)
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstop
+df-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvde
+finekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions
+.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys
+.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopd
+f-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107
+.
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107
+.
+
+(d:/Arquivos de programas/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1{d:/Arquivos de programas/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map}{d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/enc/dvips/base/8
+r.enc}
+
+
+]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 310.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 316.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 316.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 316.
+
+[2]
+<0b282cfd-d955-475b-9c7b-df4687952566.png, id=30, 2004.48875pt x 790.955pt>
+File: 0b282cfd-d955-475b-9c7b-df4687952566.png Graphic file (type png)
+<use 0b282cfd-d955-475b-9c7b-df4687952566.png>
+Package pdftex.def Info: 0b282cfd-d955-475b-9c7b-df4687952566.png  used on inpu
+t line 475.
+(pdftex.def)             Requested size: 264.60077pt x 104.4088pt.
+
+Overfull \hbox (12.60077pt too wide) in paragraph at lines 475--477
+ [][] 
+ []
+
+[3 <./0b282cfd-d955-475b-9c7b-df4687952566.png (PNG copy)>] [4]
+Overfull \hbox (8.1072pt too wide) detected at line 684
+[]
+ []
+
+
+Overfull \hbox (16.32019pt too wide) detected at line 774
+[]
+ []
+
+[5] [6] [7] [8]
+<caso equilibrado/figura_02.pdf, id=59, 587.19376pt x 341.275pt>
+File: caso equilibrado/figura_02.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_02.pdf>
+Package pdftex.def Info: caso equilibrado/figura_02.pdf  used on input line 152
+0.
+(pdftex.def)             Requested size: 230.07343pt x 130.90767pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+<caso equilibrado/figura_08.pdf, id=66, 569.12625pt x 340.27126pt>
+File: caso equilibrado/figura_08.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_08.pdf>
+Package pdftex.def Info: caso equilibrado/figura_08.pdf  used on input line 153
+1.
+(pdftex.def)             Requested size: 222.84654pt x 130.50618pt.
+<caso equilibrado/figura_06.pdf, id=68, 417.56pt x 283.0575pt>
+File: caso equilibrado/figura_06.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_06.pdf>
+Package pdftex.def Info: caso equilibrado/figura_06.pdf  used on input line 154
+2.
+(pdftex.def)             Requested size: 182.5003pt x 121.07475pt.
+<caso equilibrado/figura_03.pdf, id=70, 601.24625pt x 339.2675pt>
+File: caso equilibrado/figura_03.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_03.pdf>
+Package pdftex.def Info: caso equilibrado/figura_03.pdf  used on input line 155
+5.
+(pdftex.def)             Requested size: 235.69432pt x 130.10469pt.
+<caso equilibrado/figura_05.pdf, id=72, 422.57875pt x 283.0575pt>
+File: caso equilibrado/figura_05.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_05.pdf>
+Package pdftex.def Info: caso equilibrado/figura_05.pdf  used on input line 156
+6.
+(pdftex.def)             Requested size: 184.75873pt x 121.07475pt.
+<caso equilibrado/figura_01.pdf, id=74, 572.1375pt x 345.29pt>
+File: caso equilibrado/figura_01.pdf Graphic file (type pdf)
+<use caso equilibrado/figura_01.pdf>
+Package pdftex.def Info: caso equilibrado/figura_01.pdf  used on input line 157
+9.
+(pdftex.def)             Requested size: 224.05103pt x 132.51364pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./caso equilibrado/figura_02.pdf> <./caso equilibrado/figura_08.pdf> <./ca
+so equilibrado/figura_06.pdf> <./caso equilibrado/figura_03.pdf> <./caso equili
+brado/figura_05.pdf>]
+<caso desequilibrado/figura_01.pdf, id=200, 381.425pt x 291.0875pt>
+File: caso desequilibrado/figura_01.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_01.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_01.pdf  used on input line 
+1599.
+(pdftex.def)             Requested size: 140.38295pt x 105.29434pt.
+<caso desequilibrado/figura_02.pdf, id=202, 381.425pt x 291.0875pt>
+File: caso desequilibrado/figura_02.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_02.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_02.pdf  used on input line 
+1610.
+(pdftex.def)             Requested size: 140.38295pt x 105.29434pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<caso desequilibrado/figura_04.pdf, id=204, 381.425pt x 291.0875pt>
+File: caso desequilibrado/figura_04.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_04.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_04.pdf  used on input line 
+1621.
+(pdftex.def)             Requested size: 140.38295pt x 105.29434pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<caso desequilibrado/figura_05.pdf, id=206, 384.43625pt x 291.0875pt>
+File: caso desequilibrado/figura_05.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_05.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_05.pdf  used on input line 
+1632.
+(pdftex.def)             Requested size: 141.52724pt x 105.29434pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<caso desequilibrado/figura_07.pdf, id=208, 378.41376pt x 286.06876pt>
+File: caso desequilibrado/figura_07.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_07.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_07.pdf  used on input line 
+1641.
+(pdftex.def)             Requested size: 139.23866pt x 103.38719pt.
+<caso desequilibrado/figura_09.pdf, id=210, 381.425pt x 290.08376pt>
+File: caso desequilibrado/figura_09.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_09.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_09.pdf  used on input line 
+1650.
+(pdftex.def)             Requested size: 140.38295pt x 104.91292pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./caso equilibrado/figura_01.pdf> <./caso desequilibrado/figura_01.pdf> <.
+/caso desequilibrado/figura_02.pdf> <./caso desequilibrado/figura_04.pdf> <./ca
+so desequilibrado/figura_05.pdf> <./caso desequilibrado/figura_07.pdf>]
+<caso desequilibrado/figura_10.pdf, id=352, 380.42125pt x 288.07625pt>
+File: caso desequilibrado/figura_10.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_10.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_10.pdf  used on input line 
+1661.
+(pdftex.def)             Requested size: 140.00151pt x 104.15005pt.
+<caso desequilibrado/figura_11.pdf, id=354, 380.42125pt x 291.0875pt>
+File: caso desequilibrado/figura_11.pdf Graphic file (type pdf)
+<use caso desequilibrado/figura_11.pdf>
+Package pdftex.def Info: caso desequilibrado/figura_11.pdf  used on input line 
+1670.
+(pdftex.def)             Requested size: 140.00151pt x 105.29434pt.
+<caso desequilibrado/barra 32/figura_11.pdf, id=356, 381.425pt x 291.0875pt>
+File: caso desequilibrado/barra 32/figura_11.pdf Graphic file (type pdf)
+<use caso desequilibrado/barra 32/figura_11.pdf>
+Package pdftex.def Info: caso desequilibrado/barra 32/figura_11.pdf  used on in
+put line 1683.
+(pdftex.def)             Requested size: 140.38295pt x 105.29434pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<caso desequilibrado/barra 32/figura_08.pdf, id=358, 384.43625pt x 291.0875pt>
+File: caso desequilibrado/barra 32/figura_08.pdf Graphic file (type pdf)
+<use caso desequilibrado/barra 32/figura_08.pdf>
+Package pdftex.def Info: caso desequilibrado/barra 32/figura_08.pdf  used on in
+put line 1692.
+(pdftex.def)             Requested size: 141.52724pt x 105.29434pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<caso desequilibrado/barra 32/figura_04.pdf, id=360, 381.425pt x 290.08376pt>
+File: caso desequilibrado/barra 32/figura_04.pdf Graphic file (type pdf)
+<use caso desequilibrado/barra 32/figura_04.pdf>
+Package pdftex.def Info: caso desequilibrado/barra 32/figura_04.pdf  used on in
+put line 1703.
+(pdftex.def)             Requested size: 140.38295pt x 104.91292pt.
+[12 <./caso desequilibrado/figura_09.pdf> <./caso desequilibrado/figura_10.pdf>
+ <./caso desequilibrado/figura_11.pdf> <./caso desequilibrado/barra 32/figura_1
+1.pdf> <./caso desequilibrado/barra 32/figura_08.pdf> <./caso desequilibrado/ba
+rra 32/figura_04.pdf>] [13] [14]
+<figuras_ieee123_equilibrado/controlled_phase_voltages_wye_delta.pdf, id=493, 8
+39.135pt x 559.08875pt>
+File: figuras_ieee123_equilibrado/controlled_phase_voltages_wye_delta.pdf Graph
+ic file (type pdf)
+<use figuras_ieee123_equilibrado/controlled_phase_voltages_wye_delta.pdf>
+Package pdftex.def Info: figuras_ieee123_equilibrado/controlled_phase_voltages_
+wye_delta.pdf  used on input line 1996.
+(pdftex.def)             Requested size: 495.36346pt x 330.04718pt.
+<figuras_ieee123_equilibrado/maximum_THD_wye_delta.pdf, id=494, 555.07375pt x 3
+83.4325pt>
+File: figuras_ieee123_equilibrado/maximum_THD_wye_delta.pdf Graphic file (type 
+pdf)
+<use figuras_ieee123_equilibrado/maximum_THD_wye_delta.pdf>
+Package pdftex.def Info: figuras_ieee123_equilibrado/maximum_THD_wye_delta.pdf 
+ used on input line 2042.
+(pdftex.def)             Requested size: 252.84283pt x 174.66098pt.
+<figuras_ieee123_equilibrado/VUF_controlled_buses_wye_delta.pdf, id=495, 593.21
+625pt x 402.50375pt>
+File: figuras_ieee123_equilibrado/VUF_controlled_buses_wye_delta.pdf Graphic fi
+le (type pdf)
+<use figuras_ieee123_equilibrado/VUF_controlled_buses_wye_delta.pdf>
+Package pdftex.def Info: figuras_ieee123_equilibrado/VUF_controlled_buses_wye_d
+elta.pdf  used on input line 2046.
+(pdftex.def)             Requested size: 252.84283pt x 171.55623pt.
+ [15 <./figuras_ieee123_equilibrado/controlled_phase_voltages_wye_delta.pdf>]
+<figuras_ieee123_equilibrado/firing_angles_bus_83_wye_delta.pdf, id=569, 626.34
+pt x 431.6125pt>
+File: figuras_ieee123_equilibrado/firing_angles_bus_83_wye_delta.pdf Graphic fi
+le (type pdf)
+<use figuras_ieee123_equilibrado/firing_angles_bus_83_wye_delta.pdf>
+Package pdftex.def Info: figuras_ieee123_equilibrado/firing_angles_bus_83_wye_d
+elta.pdf  used on input line 2085.
+(pdftex.def)             Requested size: 252.84283pt x 174.23572pt.
+<figuras_ieee123_equilibrado/firing_angles_bus_95_wye_delta.pdf, id=570, 626.34
+pt x 431.6125pt>
+File: figuras_ieee123_equilibrado/firing_angles_bus_95_wye_delta.pdf Graphic fi
+le (type pdf)
+<use figuras_ieee123_equilibrado/firing_angles_bus_95_wye_delta.pdf>
+Package pdftex.def Info: figuras_ieee123_equilibrado/firing_angles_bus_95_wye_d
+elta.pdf  used on input line 2089.
+(pdftex.def)             Requested size: 252.84283pt x 174.23572pt.
+ [16 <./figuras_ieee123_equilibrado/maximum_THD_wye_delta.pdf> <./figuras_ieee1
+23_equilibrado/VUF_controlled_buses_wye_delta.pdf> <./figuras_ieee123_equilibra
+do/firing_angles_bus_83_wye_delta.pdf> <./figuras_ieee123_equilibrado/firing_an
+gles_bus_95_wye_delta.pdf>] (./artigo_SVC.bbl
+[17]) [18] (./artigo_SVC.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 50312 strings out of 467525
+ 1393480 string characters out of 5411580
+ 2112697 words of memory out of 5000000
+ 78649 multiletter control sequences out of 15000+600000
+ 682659 words of font info for 160 fonts, out of 8000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 84i,17n,104p,1748b,915s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/f
+onts/type1/public/amsfonts/cmextra/cmex9.pfb><d:/Arquivos de programas/texlive/
+2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Arquivos de progr
+amas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/Arqu
+ivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
+pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi6.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Arquivos de programas/texlive/2026/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/Arquivos de programas/t
+exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><d:/Arquivos 
+de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7
+.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/Arquivos de programas/texlive/2026/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Arquivos de programas/te
+xlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/Arquivos de p
+rogramas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Ar
+quivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmss8.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb><d:/Arquivos de programas/texlive/202
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Arquivos de programas
+/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/Arquivos 
+de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy9.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb><d:/Arquivos de programas/texlive/2026/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb><d:/Arquivos de programas/texlive/2026/texmf-d
+ist/fonts/type1/urw/times/utmbi8a.pfb><d:/Arquivos de programas/texlive/2026/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Arquivos de programas/texlive/202
+6/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on artigo_SVC.pdf (18 pages, 2053018 bytes).
+PDF statistics:
+ 893 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+

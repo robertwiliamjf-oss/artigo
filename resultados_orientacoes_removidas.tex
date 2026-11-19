@@ -1,0 +1,148 @@
+% Trechos orientativos removidos da seção de resultados de main.tex.
+% Guardado para consulta futura; não é incluído no artigo principal.
+
+% -------------------------------------------------------------------------
+\subsection{Proposed Result Cases}
+\label{subsec:proposed_result_cases}
+
+For a journal-quality assessment, the numerical results should be organized
+progressively, starting from a balanced operating condition and then moving
+to the complete three-phase unbalanced formulation. This sequence makes it
+possible to isolate the voltage-support capability of the compensators before
+evaluating the additional benefit of phase-wise control. The following cases
+are therefore recommended:
+
+\begin{itemize}
+    \item \textbf{Case A: Balanced system without compensation} --- reference
+          condition used to identify the weak buses and the base loadability
+          limit of the feeder;
+    \item \textbf{Case B: Balanced system with fixed-angle SVCs} --- evaluates
+          the benefit of conventional compensation without optimization;
+    \item \textbf{Case C: Balanced system with optimized common firing angle}
+          --- imposes $\alpha_{j,a}=\alpha_{j,b}=\alpha_{j,c}$ and separates
+          the effect of optimized reactive-power support from phase balancing;
+    \item \textbf{Case D: Unbalanced three-phase system without optimized
+          control} --- identifies voltage-unbalance and harmonic-distortion
+          problems under realistic phase loading;
+    \item \textbf{Case E: Proposed phase-wise optimized control} --- uses
+          independent values of $\alpha_{j,a}$, $\alpha_{j,b}$, and
+          $\alpha_{j,c}$ at the controlled SVCs and represents the complete
+          proposed methodology.
+\end{itemize}
+
+\noindent This organization is useful because Case C acts as an important
+intermediate benchmark: if Case E outperforms Case C, the improvement can be
+attributed to the phase-dependent control capability rather than only to the
+presence of additional reactive-power compensation.
+
+% =====================================================================
+
+% -------------------------------------------------------------------------
+\subsection{Three-Phase Unbalanced Loading Condition}
+\label{subsec:unbalanced_results}
+
+After the balanced study, the analysis should be extended to the full
+three-phase unbalanced case. This is the most important part of the results
+because it demonstrates the need for independent phase firing angles. The
+unbalanced scenario should be created by applying different loading factors
+to phases $a$, $b$, and $c$, especially at buses located downstream of the
+controlled compensators. For example, phase $a$ may be stressed more heavily
+than the other phases, while phase $c$ may be lightly loaded. The exact
+percentages should be reported in a scenario table so that the study can be
+reproduced.
+
+\begin{table}[!t]
+\centering
+\caption{Suggested definition of three-phase loading scenarios}
+\label{tab:unbalanced_scenarios_suggested}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Scenario} & Phase $a$ & Phase $b$ & Phase $c$ \\
+\midrule
+Balanced & $1.00\lambda$ & $1.00\lambda$ & $1.00\lambda$ \\
+Mild unbalance & -- & -- & -- \\
+Severe unbalance & -- & -- & -- \\
+Nonlinear-load case & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent The main result in this subsection should be a comparison between
+common-angle control and phase-wise control. The quantities to emphasize are
+the maximum VUF, the minimum phase voltage, and the phase-specific reactive
+power injected by the SVCs. If the proposed method is effective, the
+optimized angles should differ among phases and the most heavily loaded
+phase should receive a different compensation level from the lightly loaded
+phases.
+
+\begin{table}[!t]
+\centering
+\caption{Suggested summary of three-phase unbalanced performance indices}
+\label{tab:unbalanced_performance_suggested}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Case} & $V_{\min}$ & VUF$_{\max}$ & THD$_{V,\max}$ & $\lambda_{\max}$ \\
+ & (pu) & (\%) & (\%) & (pu) \\
+\midrule
+No optimized control & -- & -- & -- & -- \\
+Common-angle opt. & -- & -- & -- & -- \\
+Phase-wise opt. & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!t]
+\centering
+\caption{Suggested reporting format for optimized firing angles}
+\label{tab:optimized_angles_suggested}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{SVC bus} & $\lambda$ & $\alpha_a$ & $\alpha_b$ & $\alpha_c$ \\
+ &  & (deg) & (deg) & (deg) \\
+\midrule
+17 & -- & -- & -- & -- \\
+32 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Table~\ref{tab:optimized_angles_suggested} is essential for the
+paper because it directly shows the action taken by the proposed controller.
+For a strong discussion, the optimized angles should be plotted as functions
+of $\lambda$ and compared with the voltage and VUF curves. This reveals
+whether the optimizer changes the firing angles smoothly along the load curve
+or whether abrupt transitions occur near active constraints.
+
+% =====================================================================
+
+% -------------------------------------------------------------------------
+\subsection{Recommended Discussion Points}
+\label{subsec:recommended_discussion_points}
+
+The final part of the results section should synthesize the main findings in
+terms of engineering interpretation. The discussion should emphasize four
+points. First, in the balanced case, the optimized SVCs should improve the
+voltage profile and increase the loading margin while maintaining nearly
+equal phase firing angles. Second, in the unbalanced case, the proposed
+phase-wise control should reduce VUF more effectively than common-angle
+control because each phase can receive an independent reactive-power
+contribution. Third, the harmonic results should confirm that THD constraints
+remain satisfied at all operating points, avoiding a common drawback of
+thyristor-based compensation. Fourth, the evolution of the firing angles
+should show physically meaningful behavior: as the loading factor increases,
+the controller should move the SVCs toward stronger capacitive support while
+respecting the feasible range $90^\circ \leq \alpha_{j,\phi} \leq 180^\circ$.
+
+For the paper to be competitive in a high-quality journal, the strongest
+claim should be based on the simultaneous improvement of loadability,
+voltage profile, VUF, and THD compliance. The results should therefore avoid
+presenting only voltage profiles; instead, they should demonstrate that the
+proposed phase-wise FC--TCR control provides a broader power-quality benefit
+than fixed compensation or conventional balanced SVC control.

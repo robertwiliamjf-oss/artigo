@@ -1,0 +1,5 @@
+PWD d:/Arquivos/Doutorado/artigo
+INPUT d:/Arquivos de programas/texlive/2026/texmf.cnf
+INPUT d:/Arquivos de programas/texlive/2026/texmf-dist/web2c/texmf.cnf
+INPUT d:/Arquivos de programas/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT d:/Arquivos/Doutorado/artigo/artigo_SVC.tex

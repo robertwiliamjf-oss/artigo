@@ -1,0 +1,424 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setlength{\emergencystretch}{4em}
+\sloppy
+\setlist[itemize]{leftmargin=1.6em,itemsep=0.3em,topsep=0.3em}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=0.45em,topsep=0.3em}
+
+\newcommand{\localizacao}{\textbf{Localização.}\ }
+\newcommand{\problema}{\textbf{Problema.}\ }
+\newcommand{\impacto}{\textbf{Por que importa.}\ }
+\newcommand{\correcao}{\textbf{Correção sugerida.}\ }
+
+\title{Parecer técnico sobre\\
+\emph{Optimal Control of Static Var Compensators for Power Quality Enhancement in Three-Phase Distribution Systems}}
+\author{}
+\date{16 de julho de 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Avaliação geral}
+
+O manuscrito trata de um problema relevante e tenta integrar fluxo de potência
+harmônico trifásico, controle independente dos ramos delta de SVCs FC--TCR e
+restrições de tensão, THD e desequilíbrio. A organização conceitual é
+promissora, mas a versão atual requer \textbf{revisão maior} antes que os
+resultados possam sustentar as conclusões. Há inconsistências quantitativas nos
+parâmetros dos SVCs, erros ou ambiguidades em fórmulas usadas pela implementação,
+conflitos na definição do sistema-teste e falta de comparações que isolem o
+benefício do controle por ramo.
+
+Foram verificados explicitamente os sinais, as dimensões, as convenções de
+ramo/fase, a decomposição em componentes simétricas, o truncamento harmônico,
+as janelas de condução e as fórmulas voltadas à implementação. Também foram
+comparados resumo, metodologia, tabelas, apêndice e conclusão. Os 22 arquivos
+PDF chamados por \verb|\includegraphics| não estão presentes no conjunto de
+arquivos fornecido; por isso, as curvas e seus valores não puderam ser
+inspecionados diretamente. A tabela numérica e o texto, contudo, já revelam os
+problemas abaixo.
+
+\section*{Achados técnicos prioritários}
+
+\subsection*{1. Potências e parâmetros dos SVCs não são dimensionalmente compatíveis}
+
+\localizacao Subseção ``Fixed-Capacitor SVC Representation and Rated Power'',
+Eq.~\texttt{eq:svc\_rating}; Tabela~\texttt{tab:svc\_parameters};
+Eq.~\texttt{eq:svc\_total\_rating}; Apêndice,
+Tabela~\texttt{tab:appendix\_svc\_data}.
+
+\problema \textbf{Erro definido.} Com $C=2652{,}6\,\mu\mathrm{F}$ e
+$f=60\,\mathrm{Hz}$, obtém-se
+$B_C=2\pi fC\simeq1{,}000\,\mathrm{S}$ e $X_C\simeq1\,\Omega$, como a
+própria tabela declara. Para três ramos delta a $V_{LL}=12{,}66\,\mathrm{kV}$,
+a potência capacitiva no bloqueio completo do TCR seria
+\[
+  Q_C=3V_{LL}^2B_C\simeq480{,}83\,\mathrm{MVAr},
+\]
+e não $3{,}2108$ ou $3{,}0651\,\mathrm{MVAr}$. A discrepância é superior a
+duas ordens de grandeza e não pode ser explicada pela pequena diferença entre
+as tensões das barras. Além disso, a soma de
+$\lvert B_{\mathrm{SVC},j,\ell}\rvert$ em
+\texttt{eq:svc\_rating} produz uma grandeza sempre não negativa, enquanto a
+tabela informa um limite indutivo negativo. Ela também deixa de representar a
+potência reativa líquida quando ramos têm sinais diferentes.
+
+\impacto O dimensionamento dos compensadores determina as tensões, os ângulos
+ótimos, a THD e a aparente melhoria de carregabilidade. Se os dados usados na
+simulação tiverem a mesma inconsistência, todos os resultados precisam ser
+recalculados.
+
+\correcao Conferir a unidade de $C_j$, a tensão efetivamente aplicada aos
+ramos e as bases por unidade. Para potência líquida, usar uma soma com sinal,
+por exemplo $Q_j=V_{LL}^2\sum_\ell
+B_{\mathrm{SVC},j,\ell}$, com uma convenção capacitiva/indutiva declarada.
+Para ``capacidade instalada'', reportar separadamente as potências nominais do
+FC e do TCR, ou $\max_\alpha |Q_j(\alpha)|$, sem transformar a potência líquida
+em soma de módulos. Recalcular a Tabela~\texttt{tab:svc\_parameters} a partir
+dos mesmos dados efetivamente usados pelo fluxo harmônico.
+
+\subsection*{2. O modelo de carga perde o sinal da geração distribuída}
+
+\localizacao Eqs.~\texttt{eq:pq\_current\_injection}--
+\texttt{eq:pq\_current\_imag} e Tabela~\texttt{tab:appendix\_load\_data}.
+
+\problema \textbf{Erro definido.} As componentes retangulares substituem
+$P_{i,\phi}$ e $Q_{i,\phi}$ por $|P_{i,\phi}|$ e $|Q_{i,\phi}|$. Entretanto,
+o apêndice contém potências ativas negativas após a subtração de geração, por
+exemplo $90-200$ na barra 18. O módulo converte essa injeção líquida em uma
+carga positiva. Há ainda uma ambiguidade de sinal: a equação chama $I$ de
+corrente injetada, mas usa potência de demanda positiva sem o sinal negativo
+normalmente necessário nessa convenção.
+
+\impacto O erro altera o fluxo fundamental, as perdas, a queda de tensão, a
+sequência negativa e o ponto ótimo. Também invalida a interpretação dos casos
+com geração distribuída.
+
+\correcao Manter $P$ e $Q$ com sinal nas expressões retangulares e declarar
+uma única convenção. Se $S^{\mathrm{dem}}=P+jQ$ for demanda positiva, usar
+$I^{\mathrm{inj}}=-(S^{\mathrm{dem}}/V)^*$; alternativamente, armazenar cargas
+como injeções negativas. Atualizar de modo coerente o resíduo e o Jacobiano e
+adicionar um teste unitário com uma barra de carga e outra de geração.
+
+\subsection*{3. A transformação harmônica de sequências é singular para ordens incluídas no estudo}
+
+\localizacao Eq.~\texttt{eq:harmonic\_sequence\_decomposition} e conjunto
+$\mathcal H=\{1,3,5,7,11,13\}$ no apêndice.
+
+\problema \textbf{Erro definido.} A matriz usa $a^h$ e $a^{2h}$. Para
+$h=3$, todas as três linhas se tornam $[1\;1\;1]/3$; portanto, a matriz tem
+posto um e não decompõe a corrente em sequências zero, positiva e negativa.
+Para outras ordens, a dependência em $h$ também troca os rótulos das sequências
+em relação à transformação de Fortescue usual, sem que uma convenção
+alternativa seja definida.
+
+\impacto A ordem 3 faz parte da simulação, e a decomposição é usada para
+interpretar os efeitos do controle assimétrico. Uma classificação incorreta
+pode ocultar componentes negativas ou atribuí-las à sequência errada.
+
+\correcao Aplicar a matriz de Fortescue não singular e independente de $h$ a
+cada vetor de fasores harmônicos,
+\[
+ \frac{1}{3}
+ \begin{bmatrix}1&1&1\\1&a&a^2\\1&a^2&a\end{bmatrix},
+\]
+e depois interpretar a sequência característica de cada ordem. Se o código
+usa outra convenção, derivá-la, demonstrar que é inversível para todo
+$h\in\mathcal H$ e alinhar os rótulos $+$ e $-$.
+
+\subsection*{4. A THD calculada não corresponde claramente ao conjunto harmônico nem basta para alegar conformidade}
+
+\localizacao Eq.~\texttt{eq:thd}, subseções ``Numerical Settings'' e
+``Three-Phase Unbalanced Loading Condition'', e apêndice.
+
+\problema \textbf{Erro de notação e alegação não sustentada.} Primeiro, $H$
+é definido como o número de elementos de $\mathcal H$ e depois como a maior
+ordem, enquanto a soma $\sum_{h=2}^{H}$ sugere ordens consecutivas que não são
+modeladas. Segundo, no caso assimétrico o texto reconhece que o cancelamento
+ideal de triplas deixa de ser garantido, mas $\mathcal H$ omite a 9ª harmônica.
+O conjunto também termina na 13ª ordem e não é apresentada análise de
+convergência espectral. Assim, o valor reportado é, no máximo, uma THD parcial
+no conjunto selecionado.
+
+\impacto O otimizador pode respeitar uma restrição subestimada e o texto pode
+declarar conformidade de 8\% mesmo com componentes omitidas relevantes.
+
+\correcao Escrever
+$\mathrm{THD}_{V,i,\phi}=100
+\sqrt{\sum_{h\in\mathcal H\setminus\{1\}}|V_{i,\phi}^{(h)}|^2}/
+|V_{i,\phi}^{(1)}|$. Incluir ao menos as ordens necessárias ao padrão adotado,
+inclusive triplas que não se cancelam sob controle desigual, e demonstrar
+sensibilidade ao aumento de $h_{\max}$. Até isso ser feito, substituir
+``conformidade'' por ``satisfação do limite no espectro truncado modelado''.
+
+\subsection*{5. Fasor, magnitude, fase e ramo compartilham símbolos incompatíveis}
+
+\localizacao Eqs.~\texttt{eq:complex\_voltage\_vector},
+\texttt{eq:optproblem}, \texttt{eq:obj\_dev}, \texttt{eq:obj\_imb} e
+\texttt{eq:thd}; Eqs.~\texttt{eq:tcr\_current\_time\_solution}--
+\texttt{eq:tcr\_imag\_fourier}; discussão e legendas dos ângulos no caso
+desequilibrado.
+
+\problema \textbf{Ambiguidade de implementação.} $V_{i,\phi}^{(h)}$ aparece
+primeiro como fasor complexo e depois como magnitude real em desigualdades e
+diferenças de fase, sem barras de módulo. As desigualdades
+$V_{\min}\le V_{i,\phi}^{(1)}\le V_{\max}$ não são definidas para números
+complexos. Em paralelo, a corrente do ramo $\ell$ passa a ser indexada por
+$\phi$ nas fórmulas do TCR, e os resultados chamam $\alpha_{j,ab}$,
+$\alpha_{j,bc}$ e $\alpha_{j,ca}$ de ângulos ``entre fases'' ou ``por fase''.
+O descritor inicial é \emph{ângulo do ramo delta}; o descritor posterior é
+\emph{ângulo de fase}, que não é equivalente.
+
+\impacto Essas mudanças podem levar diretamente à implementação do objetivo
+com fasores em vez de magnitudes ou à aplicação de controles $a,b,c$ no lugar
+dos ramos $ab,bc,ca$.
+
+\correcao Reservar, por exemplo, $\underline V_{i,\phi}^{(h)}$ para o fasor,
+$v_{i,\phi}^{(h)}=|\underline V_{i,\phi}^{(h)}|$ para a magnitude e
+$\theta_{i,\phi}^{(h)}$ para o ângulo. Usar $v$ nas restrições, em
+$J_{\mathrm{dev}}$, $J_{\mathrm{imb}}$ e na THD. Manter $\ell$ em todas as
+equações do ramo TCR e nomear as três curvas de controle como $ab$, $bc$ e
+$ca$. Declarar também se $|V_2|$ nos resultados é exatamente $|V^-|$ da
+metodologia.
+
+\subsection*{6. A ordenação do vetor de estado não coincide com a matriz retangular exibida}
+
+\localizacao Eqs.~\texttt{eq:mict\_bus\_state},
+\texttt{eq:mict\_state} e \texttt{eq:real\_ybus\_h}.
+
+\problema \textbf{Erro definido, salvo se houver uma permutação omitida.} O
+estado por barra é intercalado como
+$[V_{a,r},V_{b,r},V_{c,r},V_{a,m},V_{b,m},V_{c,m}]$ e depois empilhado por
+barra. Já a matriz
+$\begin{bmatrix}\Re Y&-\Im Y\\\Im Y&\Re Y\end{bmatrix}$ pressupõe o arranjo
+global $[\mathbf V_r;\mathbf V_m]$. Para mais de uma barra, essas ordenações
+não são iguais.
+
+\impacto Sem uma matriz de permutação, os produtos matriz--vetor e o Jacobiano
+associam tensões e equações a posições erradas.
+
+\correcao Escolher uma única ordenação global ou introduzir explicitamente a
+matriz de permutação $P$ e usar $P^T\mathcal YP$. Incluir no texto um exemplo
+de duas barras e um teste que compare a forma complexa com a forma real.
+
+\subsection*{7. As janelas de condução não são coerentes com o modelo $R$--$L$ harmônico}
+
+\localizacao Eqs.~\texttt{eq:tcr\_firing\_time\_positive}--
+\texttt{eq:tcr\_extinction\_time\_negative},
+\texttt{eq:tcr\_rl\_differential}--
+\texttt{eq:tcr\_initial\_constant}, e descrição das janelas no apêndice.
+
+\problema \textbf{Provável erro de implementação.} As extinções fixas em
+$2\pi-\alpha$ e $3\pi-\alpha$ valem para a aproximação ideal, senoidal e
+essencialmente sem perdas. O próprio modelo, porém, usa $R>0$ e uma tensão com
+várias harmônicas; nessas condições o instante natural de corrente nula deve
+ser resolvido, não imposto pela simetria ideal. Além disso, o apêndice declara
+$T_{\mathrm{on},2}=\alpha_j$, enquanto a metodologia define o segundo disparo
+em $\pi+\alpha_{j,\ell}$. Não se informa se há um deslocamento implícito. A
+reconstrução temporal também não esclarece se os fasores são RMS ou de pico,
+isto é, se falta um fator $\sqrt 2$.
+
+\impacto Os coeficientes de Fourier, a susceptância fundamental e a THD
+dependem diretamente das janelas e da escala temporal. Isso pode explicar
+parte da inconsistência numérica dos SVCs.
+
+\correcao Ou assumir formalmente $R=0$ e tensão senoidal para determinar as
+janelas, usando o modelo harmônico apenas depois, ou localizar
+$t_f$ pela primeira raiz de $i(t)$ após o disparo para a forma de onda
+reconstruída. Harmonizar o segundo disparo com $\pi+\alpha$ e declarar a
+convenção RMS/pico em todas as integrais.
+
+\subsection*{8. Sistema-teste, numeração e topologia são internamente contraditórios}
+
+\localizacao Subseção ``System Description and Test Network'',
+Fig.~\texttt{fig:ieee33\_singleline} e Tabelas
+\texttt{tab:appendix\_line\_data}--\texttt{tab:appendix\_transformer\_data}.
+
+\problema \textbf{Erro definido e lacuna de reprodutibilidade.} O texto e o
+desenho colocam os SVCs controlados nas barras 17 e 32, mas a legenda da figura
+declara barras 16 e 31 ``under the shifted numbering scheme''. Além disso, a
+tabela de linhas já contém 5--6 e 7--8, enquanto a tabela de transformadores
+repete essas ligações e acrescenta 4--9, 7--9 e 4--7. Se todos esses elementos
+forem ativos, a rede não coincide com o alimentador radial desenhado. Os códigos
+de conexão ``11'', unidades, relações de transformação e bases dos parâmetros
+também não são definidos. A afirmação de que capacitâncias shunt são
+``derivadas'' de indutâncias mútuas não fornece uma relação dimensional ou uma
+equação reproduzível.
+
+\impacto Não é possível reconstruir a matriz $Y^{(h)}$ nem saber quais barras
+recebem controle. Comparações com o benchmark citado ficam indeterminadas.
+
+\correcao Fornecer uma tabela única de mapeamento entre numeração original e
+numeração deslocada; corrigir texto, desenho, legenda e arquivos de dados para
+o mesmo par de barras. Explicar se a tabela de transformadores substitui linhas
+ou adiciona ramos, mostrar esses elementos no diagrama e definir conexão,
+relação, unidade e base. Publicar a equação usada para os termos mútuos e shunt.
+
+\subsection*{9. A tabela de resultados mistura os limites de VUF}
+
+\localizacao Subseção ``Three-Phase Unbalanced Loading Condition'' e
+Tabela~\texttt{tab:unbalanced\_performance\_summary}.
+
+\problema \textbf{Erro definido.} O caso desequilibrado adota explicitamente
+$\mathrm{VUF}_{\max}=1\%$. A tabela informa VUF máximo sem SVC de
+$1{,}5876\%$ na barra 32, mas marca ``VUF limit, no SVC'' como ``Yes''. Esse
+valor viola o limite de 1\%; a célula só seria ``Yes'' sob o limite geral de
+2\%, que não é o critério declarado para esse caso.
+
+\impacto A linha de conformidade resume a principal métrica do artigo e, como
+está, induz a uma conclusão errada.
+
+\correcao Alterar a célula para ``No'' e indicar no cabeçalho da tabela que o
+limite do caso é 1\%. Não misturar o limite geral de 2\% com o alvo do ensaio de
+estresse. Regerar automaticamente as linhas ``Yes/No'' a partir dos valores e
+do limite usado na simulação.
+
+\subsection*{10. Os cenários não isolam a contribuição do controle por ramo e não demonstram carregabilidade}
+
+\localizacao Resumo, resultados equilibrados e desequilibrados e conclusão.
+
+\problema \textbf{Alegação não sustentada.} O manuscrito afirma aumento da
+capacidade de carregamento, mas não fornece $\lambda_{\max}$, critério de
+colapso/inviabilidade ou comparação numérica equilibrada sem controle. No caso
+desequilibrado, compara-se ``sem SVC'' com ``SVC otimizado'', sem um caso de
+ângulo comum. Portanto, a melhora pode decorrer da mera instalação de potência
+reativa, e não da independência entre $ab$, $bc$ e $ca$. Como SQP é um método
+local e não há análise multi-inicialização, ``optimal'' também deve ser
+entendido como ótimo local, não global.
+
+\impacto As duas contribuições centrais---maior carregabilidade e vantagem do
+controle por ramo---não são identificadas pelo desenho experimental atual.
+
+\correcao Incluir, com os mesmos equipamentos e limites: (i) sem SVC;
+(ii) SVC com ângulo fixo; (iii) otimização com um ângulo comum por SVC; e
+(iv) otimização independente por ramo. Reportar $\lambda_{\max}$, tensão
+mínima, VUF, THD, potência reativa e ângulos, além do critério que encerra a
+curva de carga. Qualificar a solução como local ou apresentar evidência de
+robustez a diferentes pontos iniciais.
+
+\subsection*{11. Dados e algoritmo ainda não permitem reprodução independente}
+
+\localizacao Subseções ``Phase-Dependent Load Curve'', ``Sequential
+Quadratic Programming Solver'' e ``Solution Algorithm''; definição do caso
+desequilibrado; apêndice.
+
+\problema \textbf{Ambiguidade de implementação.} Os 24 valores dos perfis
+$\lambda_{i,\phi,k}$ não são tabulados; a figura ausente não substituiria os
+dados exatos. Não se especificam o software SQP, cálculo dos gradientes,
+ângulos iniciais, tolerâncias de viabilidade separadas, tratamento de falhas ou
+estatísticas de convergência. O algoritmo conserva os ângulos anteriores quando
+o SQP falha, mas não verifica se esses ângulos continuam viáveis no novo nível
+de carga. Também não fica claro se ``without SVC'' remove apenas os SVCs das
+barras 17 e 32 ou mantém o SVC fixo da barra 11; a afirmação de que os dois SVCs
+controlados são as únicas fontes harmônicas conflita com a descrição anterior
+de três dispositivos.
+
+\impacto Não é possível repetir o experimento nem confirmar que todos os
+pontos apresentados satisfazem as restrições.
+
+\correcao Fornecer os perfis horários em tabela/arquivo, a função completa de
+$B_{\mathrm{TCR}}(\alpha)$, os dados do caso-base e a definição exata de cada
+cenário. Documentar solver, derivadas, inicialização e teste de viabilidade.
+Quando o SQP falhar, marcar o ponto como não resolvido ou executar uma fase de
+restauração; não armazená-lo como solução válida sem nova checagem. Reportar
+número de falhas, iterações e tempo computacional.
+
+\section*{Questões normativas e factuais a verificar externamente}
+
+\begin{itemize}
+  \item \textbf{IEC 61000-2-2:} o texto atribui o limite de 8\% a sistemas
+  públicos de média tensão, mas o próprio título bibliográfico citado diz
+  ``Public Low-Voltage Power Supply Systems''. Trata-se de uma contradição
+  interna definida. Confirmar na edição oficial vigente se o caso de
+  $12{,}66\,\mathrm{kV}$ deve citar a IEC 61000-2-12 ou outro documento e quais
+  ordens/condições integram a avaliação de THD.
+  \item \textbf{EN 50160:} confirmar na edição oficial vigente se 2\% é limite
+  absoluto aplicável a cada ponto ou valor estatístico sob uma janela de
+  medição definida. O manuscrito deve informar edição, agregação temporal e
+  critério de conformidade; o ensaio interno de 1\% deve ser distinguido da
+  exigência normativa.
+  \item \textbf{Benchmark IEEE de 33 barras:} conferir no material primário de
+  \texttt{dolatabadi2021} a numeração deslocada, os dados por fase e o papel dos
+  cinco transformadores. A versão atual não permite decidir se as tabelas são
+  adaptação intencional ou mistura de dois modelos.
+\end{itemize}
+
+\section*{Achados editoriais significativos}
+
+\begin{itemize}
+  \item \localizacao Resumo. \problema O trecho exato
+  \texttt{formulated sed on} é uma frase corrompida. \impacto O erro aparece
+  na apresentação principal do método. \correcao Substituir por
+  \texttt{formulated based on}.
+  \item \localizacao Metodologia e resultados. \problema Alternam-se
+  ``branch-wise'', ``phase-wise'', ``phase firing angles'' e ``effective firing
+  angles'' para variáveis que pertencem aos ramos delta. \impacto A variação
+  reforça a ambiguidade matemática descrita no Achado~5. \correcao Usar
+  sistematicamente ``delta-branch firing angles'' e identificar $ab$, $bc$ e
+  $ca$ nas legendas.
+  \item \localizacao Resultados desequilibrados. \problema ``without-SVC'' não
+  define quais dos três compensadores são removidos. \impacto O leitor não sabe
+  qual é o caso-base. \correcao Nomear os cenários de forma explícita, por
+  exemplo ``all SVCs disconnected'', ``fixed bus-11 SVC only'' e ``controlled
+  bus-17/bus-32 SVCs enabled''.
+\end{itemize}
+
+\subsection*{Varredura final de prova}
+
+O script fornecido \texttt{scripts/proofing\_scan.py} foi executado sobre
+\texttt{main.tex} com limite de 80 ocorrências e não encontrou casos dos
+padrões mecânicos previstos (pontuação duplicada, capitalização após
+ponto-e-vírgula, molduras ``into\ldots into'', nomes de produto ou
+\texttt{arctan(x/y)}). A inspeção manual encontrou os seguintes itens de alta
+confiança:
+
+\begin{itemize}
+  \item \localizacao Resumo. \problema \texttt{formulated sed on}.
+  \correcao \texttt{formulated based on}.
+  \item \localizacao Figura~\texttt{fig:ieee33\_singleline}.
+  \problema O rótulo interno ``A-C System'' usa uma grafia incomum para
+  corrente alternada. \correcao Usar ``AC system''.
+  \item \localizacao Bibliografia. \problema Há 18 itens, mas o ambiente é
+  aberto com \verb|\begin{thebibliography}{1}|; além disso,
+  \verb|\bibliographystyle{IEEEtran}| está dentro de uma bibliografia manual e
+  não tem efeito útil. \correcao Usar \verb|{99}| e remover o comando de estilo,
+  ou migrar integralmente para BibTeX.
+  \item \localizacao Bibliografia. \problema As entradas
+  \texttt{Hu2023HarmonicSources} e \texttt{ANEELProdist8} não são citadas.
+  \correcao Citá-las em afirmações que realmente sustentem ou removê-las.
+\end{itemize}
+
+Não foram observadas pontuações duplicadas ou aspas de títulos manifestamente
+malformadas nas referências.
+
+\section*{Ordem recomendada das correções}
+
+\begin{enumerate}
+  \item Reconciliar unidades, bases e potências dos SVCs e confirmar os dados
+  realmente usados na simulação.
+  \item Corrigir o sinal das cargas/geração, a decomposição de sequências, a
+  soma de THD, a ordenação retangular e as janelas do TCR; validar cada bloco
+  com testes simples antes de rerodar a otimização.
+  \item Tornar inequívocos a topologia, a numeração das barras, os
+  transformadores, os perfis horários e a definição de cada cenário.
+  \item Rerodar os quatro casos comparativos, corrigir a tabela de VUF e
+  reportar valores numéricos de carregabilidade, viabilidade e convergência.
+  \item Só então revisar resumo e conclusão, limitando as alegações ao que as
+  comparações e o espectro harmônico efetivamente demonstram, e concluir a
+  revisão editorial/bibliográfica.
+\end{enumerate}
+
+\end{document}
